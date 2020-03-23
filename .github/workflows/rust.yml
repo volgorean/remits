@@ -16,6 +16,7 @@ jobs:
     - name: Build
       run: cargo build --bin remits --verbose
     - name: Run tests
+      run: cargo test --verbose
 
     - name: Run cargo-tarpaulin
       uses: actions-rs/tarpaulin@v0.1
